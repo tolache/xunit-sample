@@ -19,7 +19,7 @@ namespace project1
         [Fact]
         public void FrameworkDependentTest()
         {
-            Assert.Equal(".NETFramework,Version=v4.5.1", GetFramework());
+            Assert.Equal(".NETCoreApp,Version=v1.0", GetFramework());
         }
 
         string GetFramework()
