@@ -15,5 +15,16 @@ namespace project1
         {
             return x + y;
         }
+
+        [Fact]
+        public void FrameworkDependentTest()
+        {
+            Assert.Equal(".NETCoreApp,Version=v1.0", GetFramework());
+        }
+
+        string GetFramework()
+        {
+            return AppDomain.CurrentDomain.SetupInformation.TargetFrameworkName;
+        }
     }
 }
