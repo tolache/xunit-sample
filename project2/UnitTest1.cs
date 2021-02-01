@@ -6,6 +6,7 @@ namespace project2
     public class UnitTest1
     {
         [Fact]
+        [Trait("Disabled","False")]
         public void PassingTest()
         {
             Assert.Equal(4, Add(2, 2));
