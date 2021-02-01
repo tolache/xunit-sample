@@ -6,7 +6,6 @@ namespace project1
     public class UnitTest1
     {
         [Fact]
-        [Trait("Disabled","True")]
         public void PassingTest()
         {
             Assert.Equal(4, Add(2, 2));
@@ -18,7 +17,6 @@ namespace project1
         }
 
         [Fact]
-        [Trait("Disabled","True")]
         public void FrameworkDependentTest()
         {
             Assert.Equal(".NETCoreApp,Version=v1.0", GetFramework());
