@@ -21,7 +21,7 @@ namespace project1
         [Trait("Disabled","True")]
         public void FrameworkDependentTest()
         {
-            Assert.Equal(".NETCoreApp,Version=v1.0", GetFramework());
+            Assert.Equal(".NETCoreApp,Version=v2.0", GetFramework());
         }
 
         string GetFramework()
