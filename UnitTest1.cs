@@ -14,6 +14,7 @@ public class UnitTest1
     }
 
     [Fact]
+    [Repeat(4)]
     public void Test1()
     {
         Thread.Sleep(_testDurationMs);
