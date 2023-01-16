@@ -11,7 +11,7 @@ public class TestClass1
         _testOutputHelper = testOutputHelper;
     }
 
-    [Fact]
+    [Fact (Skip = "test reason 1")]
     public void Test1()
     {
         string className = GetType().Name;
@@ -21,7 +21,7 @@ public class TestClass1
         _testOutputHelper.WriteLine($"{testName} complete.");
     }
     
-    [Fact]
+    [Fact (Skip = "test reason 2")]
     public void Test2()
     {
         string className = GetType().Name;
