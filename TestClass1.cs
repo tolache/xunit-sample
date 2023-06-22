@@ -18,7 +18,7 @@ public class TestClass1
         string methodName = System.Reflection.MethodBase.GetCurrentMethod().Name;
         string testName = $"{className}.{methodName}";
         TestDelayer.Delay();
-        _testOutputHelper.WriteLine($"{testName} complete.");
+        _testOutputHelper.WriteLine($"{testName} complete 1.");
     }
     
     [Fact (Skip = "test reason 2")]
